@@ -1,0 +1,25 @@
+# Replication Package 
+
+## 1. Overview
+This repository contains replication materials for my extension of:
+Litschig, Morrison (2013), *The Impact of Intergovernmental Transfers on Education Outcomes and Poverty Reduction*.
+
+The original paper uses a regression discontinuity (RD) design to estimate the causal impact of Brazilian FPM transfers on political and fiscal outcomes. My extension tests whether the effect of FPM eligibility on education outcomes varies with municipalities’ initial poverty levels.
+
+## 2. Data
+- `FPM1980_1991_final.dta`: processed dataset from authors’ replication package.
+- Key variables:
+  - `educ19_2891`: schooling for 19–28 year-olds in 1991.
+  - `aaa`: treatment indicator for FPM eligibility.
+  - `pscore`, `pscore_a`, `pscore_sq`, `pscore_a_sq`: running variable and RD polynomials.
+  - `poverty80`: baseline poverty in 1980.
+
+## 3. Code Structure
+- `extension_script.do`: implements the heterogeneous RD extension.
+
+## 4. How to Run
+1. Place `FPM1980_1991_final.dta` in the `replication/` folder.
+2. Open Stata, set working directory to the project root.
+3. Run:
+   ```stata
+   do code/extension_script.do
