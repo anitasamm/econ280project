@@ -2,7 +2,7 @@
 
 ## 1. Overview
 This repository contains replication materials for my extension of:
-Brollo, Nannicini, Perotti, and Tabellini (2013), *The Political Resource Curse*.
+Litschig, Morrison (2013), *The Impact of Intergovernmental Transfers on Education Outcomes and Poverty Reduction*.
 
 The original paper uses a regression discontinuity (RD) design to estimate the causal impact of Brazilian FPM transfers on political and fiscal outcomes. My extension tests whether the effect of FPM eligibility on education outcomes varies with municipalities’ initial poverty levels.
 
